@@ -1,0 +1,90 @@
+.category-list {
+    tbody tr {
+        border-bottom: none;
+        display: flex;
+        padding: 0;
+        
+    
+        @media only screen and (max-width: 599px) {
+            flex: 1;
+        }
+    
+        @media only screen and (min-width: 600px) {
+            flex: 0 0 50%;
+        }
+    
+        @media only screen and (min-width: 900px) {
+            flex: 0 0 30%;
+        }
+        
+        h3,
+        .category-title-link,
+        .category-text-title,
+        .category-name,
+        {
+            flex: 1;
+            min-width: 0px;
+        }
+        
+        .category-name {
+            line-height: 24px;
+        }
+        
+        .category-title-link {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            align-items: center;
+            min-width: 0;
+            max-width: 100%;
+        }
+    
+        .category {
+            margin: 13px;
+            border: 1px solid #e8e8e8 !important;
+            border-radius: 8px;
+            overflow: hidden;
+            flex: 1;
+            padding: 0;
+            border: none;
+            display: flex;
+            min-width: 0;
+            max-width: 100%;
+        
+            .category-text-title {
+                padding: 24px 8px !important;
+                max-width: 100%;
+            }
+            .category-logo {
+                flex: 1;
+                max-width: 100%;
+                min-width: 0;
+                width: 100%;
+                overflow: hidden;
+                margin: 0 !important;
+                padding: 0 !important;
+                
+                img {
+                    object-fit: cover;
+                }
+            }
+        }
+    
+        .category-description {
+            display: none;
+        }
+    }
+    
+    thead,
+    .topics {
+        display: none;
+    }
+}
+
+header {
+    .header-buttons .headerLink:hover a::before,
+    .title:hover img {
+        transform: scale(1.05);
+        transition: 150ms ease-in-out;
+    }
+}

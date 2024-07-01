@@ -1,0 +1,108 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+// buttons
+.btn {
+    color: var(--secondary);
+    background-color: var(--tertiary);
+    border-radius: 3px;
+    padding: 12px 24px !important;
+    
+    .d-icon {
+        color: var(--secondary);
+    }
+}
+.discourse-no-touch .btn:hover,
+.discourse-no-touch .btn.btn-hover {
+    background-color: #55af24;
+}
+.btn[href] {
+    color: var(--secondary);
+}
+.login-button {
+    padding: 12px 24px !important;
+    text-transform: uppercase;
+    svg {
+        display: none;
+    }
+}
+.login-button:hover {
+    border-color: #55af24;
+}
+
+// hamburger menu
+.menu-panel li a.widget-link:hover,
+.menu-panel li a.widget-link:active,
+.menu-panel li a.categories-link:hover,
+.menu-panel li a.categories-link:active,
+.menu-panel li.heading a.categories-link:hover,
+.menu-panel li.heading a.categories-link:active,
+.user-menu .quick-access-panel li:hover,
+.user-menu .quick-access-panel li:active,
+.directory .me {
+    background-color: #d5ecc5;
+}
+
+// hide category selector on category overview
+.select-kit.single-select.combobox.combo-box.category-drop.box.ember-view:not(.has-selection) {
+    display: none;
+}
+
+// navigation
+.nav-pills > li {
+    margin-right: 0;
+}
+.nav-pills > li > a {
+    padding: 8px 16px;
+}
+.nav-pills > li a.active {
+    background: none;
+    color: var(--primary);
+    border-bottom: 2px solid var(--tertiary);
+}
+.nav-pills > li > a:hover {
+    background-color: #d5ecc5;
+    color: var(--primary);
+}
+
+// category
+.category-logo.aspect-image img{
+    width: 100%;
+}
+
+.categories-and-latest {
+    flex-flow: column;
+}
+
+
+// .categories-and-latest {
+//     flex-flow: column-reverse;
+// }
+// .categories-and-latest > .categories {
+//     margin-top: 24px;
+// }
+
+.category-list tbody {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    @media only screen and (max-width: 599px) {
+        flex-direction: column;
+    }
+    
+    @media only screen and (min-width: 600px) {
+        flex-flow: row wrap;
+    }
+}
+
+.category-desc {
+    display: none;
+}
+
+#topic-footer-buttons {
+    overflow: auto;
+}

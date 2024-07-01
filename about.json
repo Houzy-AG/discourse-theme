@@ -1,0 +1,34 @@
+{
+  "name": "Houzy Theme Light",
+  "component": false,
+  "license_url": null,
+  "about_url": null,
+  "authors": null,
+  "theme_version": null,
+  "minimum_discourse_version": null,
+  "maximum_discourse_version": null,
+  "assets": {
+    "Haus-cockpit": "assets/Haus-cockpit.jpg",
+    "Houzy": "assets/Houzy.png",
+    "MyHouzy-Logo-negativ": "assets/MyHouzy-Logo-negativ.png",
+    "Pflanzenmanager": "assets/Pflanzenmanager.jpg",
+    "Warum-Houzy": "assets/Warum-Houzy.jpg"
+  },
+  "color_schemes": {
+    "Houzy Colors": {
+      "primary": "1b1b1b",
+      "secondary": "ffffff",
+      "tertiary": "70bf39",
+      "quaternary": "70bf39",
+      "header_background": "30383f",
+      "header_primary": "ffffff",
+      "highlight": "ffff4d",
+      "danger": "e45735",
+      "success": "009900",
+      "love": "fa6c8d"
+    }
+  },
+  "modifiers": {
+  },
+  "learn_more": "https://meta.discourse.org/t/beginners-guide-to-using-discourse-themes/91966"
+}
