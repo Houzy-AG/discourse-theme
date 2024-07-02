@@ -23,6 +23,8 @@
       "header_background": "30383f",
       "header_primary": "ffffff",
       "highlight": "ffff4d",
+      "selected": "d1f0ff",
+      "hover": "f2f2f2",
       "danger": "e45735",
       "success": "009900",
       "love": "fa6c8d"

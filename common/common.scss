@@ -6,31 +6,28 @@ body {
 
 // buttons
 .btn {
-    color: var(--secondary);
-    background-color: var(--tertiary);
-    border-radius: 3px;
-    padding: 12px 24px !important;
-    
-    .d-icon {
-        color: var(--secondary);
-    }
+    border-radius: 4px;
 }
+
 .discourse-no-touch .btn:hover,
 .discourse-no-touch .btn.btn-hover {
-    background-color: #55af24;
+    background-color: var(--tertiary-low);
+    color: inherit;
+    svg{
+        color: inherit!important;
+    }
 }
-.btn[href] {
-    color: var(--secondary);
-}
+
+
 .login-button {
-    padding: 12px 24px !important;
     text-transform: uppercase;
     svg {
         display: none;
     }
 }
+
 .login-button:hover {
-    border-color: #55af24;
+    border-color: var(--tertiary-low);
 }
 
 // hamburger menu
@@ -51,18 +48,12 @@ body {
     display: none;
 }
 
-// navigation
-.nav-pills > li {
-    margin-right: 0;
-}
-.nav-pills > li > a {
-    padding: 8px 16px;
-}
 .nav-pills > li a.active {
     background: none;
     color: var(--primary);
     border-bottom: 2px solid var(--tertiary);
 }
+
 .nav-pills > li > a:hover {
     background-color: #d5ecc5;
     color: var(--primary);
@@ -76,14 +67,6 @@ body {
 .categories-and-latest {
     flex-flow: column;
 }
-
-
-// .categories-and-latest {
-//     flex-flow: column-reverse;
-// }
-// .categories-and-latest > .categories {
-//     margin-top: 24px;
-// }
 
 .category-list tbody {
     display: flex;
