@@ -43,7 +43,7 @@ body {
     background-color: #d5ecc5;
 }
 
-// hide category selector on category overview (.ember-view removed in Ember 6)
+// hide category selector on category overview
 .select-kit.single-select.combobox.combo-box.category-drop.box:not(.has-selection) {
     display: none;
 }
@@ -72,6 +72,14 @@ body {
 // category
 .category-logo.aspect-image img{
     width: 100%;
+}
+
+.category-list .category-name,
+.category-list .category-title-link,
+.category-list .category-text-title,
+.category-list .category-text-title a,
+.category-list .badge-category__name {
+    color: #000;
 }
 
 .categories-and-latest {
