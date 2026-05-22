@@ -30,21 +30,31 @@ body {
     border-color: var(--tertiary-low);
 }
 
-// hamburger menu
-.menu-panel li a.widget-link:hover,
-.menu-panel li a.widget-link:active,
-.menu-panel li a.categories-link:hover,
-.menu-panel li a.categories-link:active,
-.menu-panel li.heading a.categories-link:hover,
-.menu-panel li.heading a.categories-link:active,
+// hamburger menu (Glimmer sidebar links in menu panel)
+.menu-panel .sidebar-section-link:hover,
+.menu-panel .sidebar-section-link:focus-visible,
+.hamburger-panel .sidebar-section-link:hover,
+.hamburger-panel .sidebar-section-link:focus-visible,
+.dropdown-menu__item .sidebar-section-link:hover,
+.dropdown-menu__item .sidebar-section-link:focus-visible,
 .user-menu .quick-access-panel li:hover,
 .user-menu .quick-access-panel li:active,
 .directory .me {
     background-color: #d5ecc5;
 }
 
-// hide category selector on category overview
-.select-kit.single-select.combobox.combo-box.category-drop.box.ember-view:not(.has-selection) {
+// hide category selector on category overview (.ember-view removed in Ember 6)
+.select-kit.single-select.combobox.combo-box.category-drop.box:not(.has-selection) {
+    display: none;
+}
+
+// hide category color square indicators (badge style changed in 2026.x)
+.badge-category.--style-square::before {
+    display: none;
+}
+
+// hide category color squares in docked sidebar / hamburger nav
+.sidebar-section-link-prefix .prefix-span {
     display: none;
 }
 
